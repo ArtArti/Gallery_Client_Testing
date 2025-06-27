@@ -4,7 +4,7 @@
 <suite name="Single Browser Test Suite" parallel="false">
 
     <test name="Chrome Tests" preserve-order="true">
-        <parameter name="headless" value="false"/>
+        <parameter name="headless" value="true"/>
         <groups>
             <run>
 <!--                <include name="dropdown"/>-->
