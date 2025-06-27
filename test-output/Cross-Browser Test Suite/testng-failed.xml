@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Cross-Browser Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Chrome Tests(failed)">
+    <parameter name="headless" value="false"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="login"/>
+        <include name="dropdown"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testRegistration"/>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="initializePages"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.DropDownTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="testLoginWithValidCredentials"/>
+          <include name="testClickChangePassword"/>
+          <include name="testDropdownMenuIsVisible"/>
+          <include name="testHoverOverDropDownItems"/>
+          <include name="setUpClass"/>
+          <include name="setupPages"/>
+          <include name="testClickContactLink"/>
+        </methods>
+      </class> <!-- tests.DropDownTest -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+  <test thread-count="2" parallel="tests" name="Edge Tests(failed)">
+    <parameter name="headless" value="false"/>
+    <parameter name="browser" value="edge"/>
+    <groups>
+      <run>
+        <include name="login"/>
+        <include name="dropdown"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testRegistration"/>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="setUpClass"/>
+          <include name="initializePages"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.DropDownTest">
+        <methods>
+          <include name="tearDownClass"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="testLoginWithValidCredentials"/>
+          <include name="testClickChangePassword"/>
+          <include name="testDropdownMenuIsVisible"/>
+          <include name="testHoverOverDropDownItems"/>
+          <include name="setUpClass"/>
+          <include name="setupPages"/>
+          <include name="testClickContactLink"/>
+        </methods>
+      </class> <!-- tests.DropDownTest -->
+    </classes>
+  </test> <!-- Edge Tests(failed) -->
+</suite> <!-- Failed suite [Cross-Browser Test Suite] -->

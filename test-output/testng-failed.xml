@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Single Browser Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome Tests(failed)">
+    <parameter name="headless" value="false"/>
+    <groups>
+      <run>
+        <include name="login"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testRegistration"/>
+          <include name="setUpMethod"/>
+          <include name="tearDownMethod"/>
+          <include name="initializePageObjectsForMethod"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Chrome Tests(failed) -->
+</suite> <!-- Failed suite [Single Browser Test Suite] -->

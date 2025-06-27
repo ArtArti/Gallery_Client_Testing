@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginTestSuite]" verbose="2">
+  <test thread-count="5" name="ChromeLoginTest(failed)" verbose="2">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.DropDownTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDownDropdownTests"/>
+          <include name="tearDown"/>
+          <include name="testDropdownAccessibility"/>
+          <include name="beforeEachTest"/>
+          <include name="testMenuItemHoverEffects"/>
+          <include name="afterEachTest"/>
+          <include name="testDropdownRapidClickBehavior"/>
+          <include name="testDropdownMenuStructure"/>
+          <include name="testDropdownAfterPageInteractions"/>
+          <include name="setupDropdownTests"/>
+        </methods>
+      </class> <!-- tests.DropDownTest -->
+    </classes>
+  </test> <!-- ChromeLoginTest(failed) -->
+</suite> <!-- Failed suite [LoginTestSuite] -->
