@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Java
         uses: actions/setup-java@v3
@@ -29,9 +29,9 @@ jobs:
       - name: Run Tests using Maven
         run: mvn clean test
 
-      - name: Upload Test Report (Optional)
+      - name: Upload Test Report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: TestNG-Reports
           path: test-output/
